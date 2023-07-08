@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    /*fonts*/
+    --font-size : 15px;
+    --font-family : 'Overpass';
+    --font-weight1: 400;
+    --font-weight2: 700;
+
+    /*colors*/
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    font-family: var(--font-family);
+    display: grid;
+    place-items:  center;
+}
+.container1{
+    margin-top: 200px;
+    background-color: var(--Dark-Blue);
+    display: grid;
+    grid-template-rows: 70px 50px 100px 50px 100px;
+    grid-template-columns: 1fr;
+    border-radius: 30px;
+    padding: 35px;
+    width: 350px;
+    height: 350px;
+}
+.icon{
+    padding-top: 7px;
+    grid-row: 1/2;
+}
+.icon > svg{
+    background-color: hsl(214, 19%, 25%);;
+    padding: 15px;
+    border-radius: 50%;
+}
+.h1{
+    grid-row: 2/3;
+    color: var(--White);
+    
+}
+h1{
+    margin-top: 12px;
+}
+.txt{
+    grid-row: 3/4;
+    color: var(--Light-Grey);
+    max-width: 350px;
+}
+.number{
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.n{
+    display: grid;
+    place-items: center;
+    background-color: hsl(214, 19%, 25%);
+    width: 50px;
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    font-weight: var(--font-weight2);
+}
+.n:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.n:active{
+    background-color:var(--Medium-Grey);
+   
+}
+
+.btn{
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+}
+button{
+    background-color: var(--Orange);
+    color: var(--White);
+    width: 340px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px ;
+    font-family: var(--font-family);
+    letter-spacing: 5px;
+    font-weight: var(--font-weight2);
+    font-size: var(--font-size);
+}
+button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.container2{
+    margin-top: 200px;
+    background-color: var(--Dark-Blue);
+    display: none;
+    grid-template-rows: 150px 50px 100px ;
+    grid-template-columns: 1fr;
+    border-radius: 30px;
+    padding: 35px;
+    width: 350px;
+    height: 350px;
+    place-items: center;
+}
+.msg{
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 35px;
+    background-color:  hsl(214, 19%, 25%);
+    color: var(--Orange);
+}
+.msg > p{
+    margin: 0;
+}
+.txt1{
+    font-size: var(--font-size);
+    display: grid;
+    place-items: center;
+    padding-top: 25px;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: var(--White);
+}
+.p{
+    display: grid;
+    place-items: center;
+    margin-block-start: 10px;
+    margin-block-end: 0;
+    color: var(--Light-Grey);
+}
